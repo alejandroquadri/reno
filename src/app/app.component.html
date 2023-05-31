@@ -1,1 +1,19 @@
-<div class="m-5 pt-5 colorchange">Hola {{ title }}</div>
+<mat-sidenav-container>
+  <mat-sidenav
+    #sidenav
+    fixedInViewport="true"
+    [opened]="false"
+    position="start">
+    <app-side-menu></app-side-menu>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div #wrapper class="wrapper">
+      <app-header></app-header>
+      <div>content</div>
+    </div>
+    <div class="footer">
+      <app-footer></app-footer>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

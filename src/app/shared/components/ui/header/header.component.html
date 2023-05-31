@@ -1,0 +1,18 @@
+<mat-toolbar class="nav px-3 px-lg-4">
+  <button
+    class="d-sm-none"
+    type="button"
+    aria-label="Toggle sidenav"
+    mat-icon-button
+    (click)="openSide()">
+    <mat-icon class="material-icons-outlined" aria-label="Side nav toggle icon"
+      >menu</mat-icon
+    >
+  </button>
+  <div>AILU RENO</div>
+  <!-- <img class="logo" alt="logo" [src]="logo" /> -->
+  <span class="spacer"></span>
+  <div class="links-container d-none d-sm-block">
+    <app-menu-list type="header"></app-menu-list>
+  </div>
+</mat-toolbar>

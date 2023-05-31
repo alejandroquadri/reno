@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "reno-4ebd4": {
+      "hosting": {
+        "reno": [
+          "reno-4ebd4"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "reno-4ebd4"
+  }
+}

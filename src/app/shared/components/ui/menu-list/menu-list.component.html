@@ -1,0 +1,18 @@
+<ng-container *ngFor="let item of menu">
+  <ng-container *ngIf="type === 'side-menu'">
+    <a class="link-item" (click)="closeDrawer()" mat-list-item>
+      {{ item.es }}
+    </a>
+  </ng-container>
+  <ng-container *ngIf="type === 'footer' || type === 'header'">
+    <a
+      class="link-item"
+      [ngClass]="{
+        'd-block': type === 'footer',
+        'footer-btn': type === 'footer'
+      }"
+      mat-button>
+      {{ item.es }}
+    </a>
+  </ng-container>
+</ng-container>
