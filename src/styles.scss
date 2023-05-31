@@ -1,4 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+@import './node_modules/bootstrap/scss/bootstrap';
+
+@import 'styles/variables'; // esto es para corregir algunas cosas de bootstrap
+@import 'styles/reset'; // allows you to override some of the Bootstrap styles you don't want. That's why you've added it after all Bootstrap imports.
+@import 'styles/quadri-theme.scss';
+@import 'styles/colors.scss';
