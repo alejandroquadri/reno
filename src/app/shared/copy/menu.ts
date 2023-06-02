@@ -8,7 +8,7 @@ export const MENU = {
     {
       en: 'Designs',
       es: 'Diseños',
-      url: { es: 'disenos', en: 'designs' },
+      url: { es: 'espacios', en: 'designs' },
     },
     {
       en: 'Pricing',

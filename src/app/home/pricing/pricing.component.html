@@ -1,0 +1,22 @@
+<div class="container">
+  <h1 class="m-3 pb-3">{{ copy.title }}</h1>
+  <div class="card-wrapper d-flex justify-content-center">
+    <div
+      *ngFor="let option of copy.options"
+      class="card mx-5"
+      style="width: 18rem">
+      <!-- <img [src]="design.img" class="card-img-top" alt="..." /> -->
+      <div class="card-body">
+        <div class="opt-title text-center">{{ option.title }}</div>
+        <div class="price text-center pb-3">
+          {{ option.price | currency : 'USD' : 'symbol-narrow' : '0.0-2' }}
+        </div>
+        <ul class="checkmark">
+          <li *ngFor="let feature of option.features">
+            {{ feature }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

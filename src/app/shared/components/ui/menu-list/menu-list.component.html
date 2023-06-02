@@ -11,6 +11,8 @@
         'd-block': type === 'footer',
         'footer-btn': type === 'footer'
       }"
+      [routerLink]="['/' + item.url.es]"
+      routerLinkActive="router-link-active"
       mat-button>
       {{ item.es }}
     </a>

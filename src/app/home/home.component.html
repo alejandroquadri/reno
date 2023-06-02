@@ -1,0 +1,23 @@
+<mat-sidenav-container>
+  <mat-sidenav
+    #sidenav
+    fixedInViewport="true"
+    [opened]="false"
+    position="start">
+    <app-side-menu></app-side-menu>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div #wrapper class="wrapper" *ngIf="id$ | async">
+      <app-header></app-header>
+      <app-landing></app-landing>
+      <app-how-works class="my-5" id="como-funciona"></app-how-works>
+      <app-designs class="my-5" id="espacios"></app-designs>
+      <app-pricing class="my-5" id="precios"></app-pricing>
+      <app-contact class="my-5" id="contacto"></app-contact>
+    </div>
+    <div class="footer">
+      <app-footer></app-footer>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,40 @@
+.opt-title {
+  font-weight: bold;
+  color: var(--grey-400);
+}
+
+.price {
+  font-size: 2rem;
+}
+
+ul {
+  // font-family: $main_font;
+  // font-size: 13px;
+  line-height: 1.5em;
+  margin: 5px 0 15px;
+  padding: 0;
+  li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 20px;
+  }
+}
+
+ul.checkmark {
+  li {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 5px;
+      width: 3px;
+      height: 6px;
+      border: solid green;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}

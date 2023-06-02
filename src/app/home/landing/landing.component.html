@@ -1,0 +1,25 @@
+<div class="img-wrapper">
+  <video class="bg-video" #bgVideo playsinline autoplay [muted]="true" loop>
+    <source [src]="video" type="video/mp4" />
+  </video>
+
+  <div class="caption-wrapper d-flex flex-column align-items-center">
+    <div class="m-auto">
+      <div class="text-wrapper">
+        <h1 class="landing-oneLiner">{{ copy.title }}</h1>
+        <h4 class="subtitle pt-2">
+          {{ copy.subTitle }}
+        </h4>
+      </div>
+      <div class="d-flex justify-content-center mt-4">
+        <button mat-flat-button color="primary" class="lg-btn mx-2">
+          Presupuesto
+        </button>
+
+        <button mat-stroked-button class="lg-btn mx-2 btn-outline-white">
+          Contactanos
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
